@@ -8,9 +8,6 @@
 In this tutorial, we observe various network traffic to and from Azure Virtual Machines with Wireshark as well as experiment with Network Security Groups. <br />
 
 
-<h2>Video Demonstration</h2>
-
-- ### [YouTube: Azure Virtual Machines, Wireshark, and Network Security Groups](https://www.youtube.com)
 
 <h2>Environments and Technologies Used</h2>
 
@@ -25,35 +22,62 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 - Windows 10 (21H2)
 - Ubuntu Server 20.04
 
-<h2>High-Level Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
 
 <h2>Actions and Observations</h2>
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+![image](https://github.com/user-attachments/assets/5ffd7e35-db1c-4b08-a9bc-a213827ec80d)
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+ - Create 2 VM's
 </p>
 <br />
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+![image](https://github.com/user-attachments/assets/4ed9b6fd-09dc-492a-9036-4f51428927c2)
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+ - Install Wireshark on the windows VM
 </p>
 <br />
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+![image](https://github.com/user-attachments/assets/7cfc86de-4d32-42f4-9b75-240b50010bfe)
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+- Filter for ICMP traffic and observe the properties
 </p>
 <br />
+
+
+<p>
+
+  
+![image](https://github.com/user-attachments/assets/86169939-3167-46f2-885a-9b1b237fab0e)
+
+![image](https://github.com/user-attachments/assets/8f7306ea-2900-47f9-a616-91aad8f37b87)
+
+</p>
+
+- Configure Linux VM to block inbound ICMP requests and observe
+  - Turn it back on when you're done
+</p>
+<br />
+
+
+![image](https://github.com/user-attachments/assets/b2eb4aca-27fa-449f-93df-dca4c2b236a5)
+
+![image](https://github.com/user-attachments/assets/1102bec9-c5bc-46ad-bb0d-a82c9b55ba8b)
+
+![image](https://github.com/user-attachments/assets/984f99a1-b08a-488b-a5c9-cac4167cb766)
+
+![image](https://github.com/user-attachments/assets/b1906975-c29e-4831-b5c5-a64666a980d6)
+
+</p>
+<p>
+- Filter for SSH, DHCP, DNS and, RDP  and observe traffic
+</p>
+<br />
+
+
